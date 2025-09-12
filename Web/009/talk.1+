@@ -9,7 +9,7 @@ $(function() {
         });
     });
     $('#no').click(function(event) {
-        modal('陪我跨年吧！', A);
+        modal('陪我跨年！', A);
     });
 });
 
