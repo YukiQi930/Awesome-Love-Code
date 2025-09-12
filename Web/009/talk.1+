@@ -14,7 +14,7 @@ $(function() {
 });
 
 function A() {
-    modal('我喜歡妳！', B);
+    modal('我喜歡妳！', function() {
         fireworks();
     });
 }
