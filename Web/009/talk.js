@@ -9,7 +9,7 @@ $(function() {
         });
     });
     $('#no').click(function(event) {
-        modal('陪我跨年吧！', A);
+        modal('陪我跨年！', A);
     });
 });
 
@@ -28,7 +28,7 @@ function modal(content, callback) {
         '<div class="mask"></div>'+
         '<div class="modal">'+
         '<p>'+ content +'</p>'+
-        '<button type="button" id="confirm" class="confirm">确定</button>'+
+        '<button type="button" id="confirm" class="confirm">確定</button>'+
         '</div>'+
         '</div>';
     $('body').append(tpl);
