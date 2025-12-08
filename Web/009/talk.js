@@ -1,6 +1,6 @@
 $(function() {
     $('#yes').click(function(event) {
-        modal('我就知道寶寶願意~(^_^)', function() {
+        modal('我就知道妳願意陪我', function() {
             $('.page_one').addClass('hide');
             $('.page_two').removeClass('hide');
             // typeWrite();
@@ -9,12 +9,36 @@ $(function() {
         });
     });
     $('#no').click(function(event) {
-        modal('陪我跨年！', A);
+        modal('寶寶我真的', A);
     });
 });
 
 function A() {
-    modal('我喜歡妳！',function() {
+    modal('好喜歡妳！', B);
+}
+
+function B() {
+    modal('很愛妳', C);
+}
+
+function C() {
+    modal('妳的過去', D);
+}
+
+function D() {
+    modal('我不會在意', E);
+}
+
+function E() {
+    modal('我只是不想再到妳難過', F);
+}
+
+function F() {
+    modal('讓我們一直在一起吧', G);
+}
+
+function H() {
+    modal('永遠不分開', function() {
         fireworks();
     });
 }
@@ -29,7 +53,7 @@ function modal(content, callback) {
         '<div class="mask"></div>'+
         '<div class="modal">'+
         '<p>'+ content +'</p>'+
-        '<button type="button" id="confirm" class="confirm">確定</button>'+
+        '<button type="button" id="confirm" class="confirm">願意</button>'+
         '</div>'+
         '</div>';
     $('body').append(tpl);
