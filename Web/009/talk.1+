@@ -38,7 +38,7 @@ function F() {
 }
 
 
-function J() {
+function H() {
     modal('永遠不分開', function() {
         fireworks();
     });
